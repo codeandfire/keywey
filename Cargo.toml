@@ -1,0 +1,18 @@
+[package]
+name = "keywey_core"
+version = "0.1.0"
+description = "A keyword extraction engine."
+readme = "README.md"
+license-file = "LICENSE"
+authors = ["Saniya Maheshwari <saniya.mah@gmail.com>"]
+edition = "2021"
+
+[lib]
+name = "keywey_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.16"
+
+[profile.release]
+strip = "debuginfo"

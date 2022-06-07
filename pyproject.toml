@@ -1,0 +1,31 @@
+[project]
+name = "keywey"
+version = "0.1.0"
+description = "A keyword extraction engine."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["importlib_resources~=5.7"]
+
+[project.license]
+file = "LICENSE"
+
+[[project.authors]]
+name = "Saniya Maheshwari"
+email = "saniya.mah@gmail.com"
+
+[project.optional-dependencies]
+dev = ["flake8", "sphinx"]
+
+[build-system]
+requires = ["build",
+	    "setuptools~=62.0",
+	    "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools.package-data]
+"keywey.data" = ["case.txt"]
+"keywey.data.stopwords" = ["stopwords_*.txt"]
