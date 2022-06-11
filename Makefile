@@ -219,10 +219,11 @@ docs: ./$(virtualenv)
 .PHONY: lint
 lint: rs_lint py_lint
 
-# Lint Python code (run flake8).
+# Lint Python code (run flake8 and mypy).
 .PHONY: py_lint
 py_lint: ./$(virtualenv)
 	- ./$(virtualenv)/bin/$(PYTHON) -m flake8 ./src/$(py_package)/*.py ./tests/*.py
+	- ./$(virtualenv)/bin/$(PYTHON) -m mypy ./src/$(py_package)/*.py
 
 # Lint Rust code (run clippy and rustfmt).
 .PHONY: rs_lint

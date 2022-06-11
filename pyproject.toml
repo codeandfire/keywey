@@ -14,7 +14,7 @@ name = "Saniya Maheshwari"
 email = "saniya.mah@gmail.com"
 
 [project.optional-dependencies]
-dev = ["flake8", "sphinx"]
+dev = ["flake8", "mypy", "sphinx"]
 
 [build-system]
 requires = ["build",
@@ -29,3 +29,6 @@ where = ["src"]
 [tool.setuptools.package-data]
 "keywey.data" = ["case.txt"]
 "keywey.data.stopwords" = ["stopwords_*.txt"]
+
+[tool.mypy]
+warn_unused_configs = true

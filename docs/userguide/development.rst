@@ -153,7 +153,7 @@ Options                                                         Details
 
 **Python**
 
-Tool used: `Flake8 <https://flake8.pycqa.org/en/latest/index.html>`_
+Tool used: `Flake8 <https://flake8.pycqa.org/en/latest/index.html>`_ and `Mypy <http://mypy-lang.org/>`_
 
 =============================================================== =====================================================================================================================
 Options                                                         Details
@@ -161,6 +161,7 @@ Options                                                         Details
 `Black <https://github.com/psf/black>`_                         Opinionated autoformatter for Python projects. We are not in favour of the Black code style!
 `Flake8 <https://flake8.pycqa.org/en/latest/index.html>`_       Standard linter for Python projects. Checks code style and formatting, among other lints. We use ``flake8`` with a
                                                                 maximum line length setting of 90 characters.
+`Mypy <http://mypy-lang.org/>`_                                 Standard static type checker for Python code.
 =============================================================== =====================================================================================================================
 
 CLI Automation Tools
