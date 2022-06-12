@@ -4,8 +4,6 @@ if sys.version_info < (3, 10):
 else:
     from importlib.resources import files
 
-from typing import Optional
-
 
 def _load_stopwords(lang: str = 'en') -> list[str]:
     try:

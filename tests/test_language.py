@@ -18,8 +18,10 @@ class TestLoadStopwords(unittest.TestCase):
             _load_stopwords(lang='z')
 
     def test_load_stopwords_no_support(self):
-        with self.assertRaisesRegex(RuntimeError, "no support for language with code 'zz'"):
+        with self.assertRaisesRegex(RuntimeError,
+                                    "no support for language with code 'zz'"):
             _load_stopwords(lang='zz')
+
 
 class TestLoadCase(unittest.TestCase):
 
