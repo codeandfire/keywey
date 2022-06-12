@@ -20,9 +20,7 @@ email = "saniya.mah@gmail.com"
 dev = ["flake8", "mypy", "sphinx"]
 
 [build-system]
-requires = ["build",
-	    "setuptools~=62.0",
-	    "wheel"]
+requires = ["build", "setuptools~=62.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
