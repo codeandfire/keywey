@@ -1,4 +1,9 @@
-from importlib_resources import files
+import sys
+if sys.version_info < (3, 10):
+    from importlib_resources import files
+else:
+    from importlib.resources import files
+
 from typing import Optional
 
 
