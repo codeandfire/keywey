@@ -1,10 +1,10 @@
 Cargo.lock
-/docs/_build
-/docs/_static
-/docs/_templates
+/docs/_build/
+/docs/_static/
+/docs/_templates/
 __pycache__/
 *.so
 /src/keywey/data
 tags
-target
-.venv
+/target/
+/.venv/
