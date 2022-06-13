@@ -5,7 +5,7 @@ else:
     from importlib.resources import files
 
 
-def _load_stopwords(lang: str = 'en') -> list[str]:
+def _load_stopwords(lang='en'):
     try:
         contents = files('data.stopwords').joinpath(f'stopwords_{lang}.txt').read_text()
     except FileNotFoundError:
@@ -18,7 +18,7 @@ def _load_stopwords(lang: str = 'en') -> list[str]:
     return stopwords
 
 
-def _load_case(lang: str = 'en') -> str:
+def _load_case(lang='en'):
     if len(lang) != 2:
         raise ValueError(f"invalid language code '{lang}'")
     contents = files('data').joinpath('case.txt').read_text()
