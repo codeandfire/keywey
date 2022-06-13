@@ -161,6 +161,10 @@ Options                                                         Details
 `Black <https://github.com/psf/black>`_                         Opinionated autoformatter for Python projects. We are not in favour of the Black code style!
 `Flake8 <https://flake8.pycqa.org/en/latest/index.html>`_       Standard linter for Python projects. Checks code style and formatting, among other lints. We use ``flake8`` with a
                                                                 maximum line length setting of 90 characters.
+`Mypy <http://mypy-lang.org/>`_                                 Standard static type checker for Python projects. Currently we are not using type hints in our code. This is primarily 
+                                                                because a fair amount of our code is in Rust, and therefore the Python API that wraps around the Rust code will have
+                                                                limited scope for type checking. We are open to *type stubs* (``.pyi`` files) for integration with other projects
+                                                                that may use type hints, but we are not working on this right now.
 =============================================================== =====================================================================================================================
 
 CLI Automation Tools
