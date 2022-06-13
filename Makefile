@@ -1,5 +1,5 @@
 # ========================================================================================
-# Makefile
+# Development Makefile
 #
 # Commands:
 #     Set up a development environment, with Rust and Python dependencies installed.
