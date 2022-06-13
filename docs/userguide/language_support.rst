@@ -49,10 +49,9 @@ We maintain stopword lists for languages as text files under the directory ``dat
 For example ``data/stopwords/stopwords_en.txt`` contains a list of English stopwords.
 The sources of these various stopword lists are listed below:
 
-============ =========================================================================== ========================================================================================
-Language     Source                                                                      Link
-============ =========================================================================== ========================================================================================
-English (en) NLTK.                                                                       `link <https://github.com/nltk/nltk_data/blob/gh-pages/packages/corpora/stopwords.zip>`_
-Hindi (hi)   Jha, Vandana; N, Manjunath; Shenoy, P Deepa; K R, Venugopal (2018), "Hindi  `link <https://data.mendeley.com/datasets/bsr3frvvjc/1>`_
-             Language Stop Words List", Mendeley Data, V1, doi: 10.17632/bsr3frvvjc.1
-============ =========================================================================== ========================================================================================
+============ ===================================================================================================================================================================
+Language     Source
+============ ===================================================================================================================================================================
+English (en) `NLTK. <https://github.com/nltk/nltk_data/blob/gh-pages/packages/corpora/stopwords.zip>`_ 
+Hindi (hi)   Jha, Vandana; N, Manjunath; Shenoy, P Deepa; K R, Venugopal (2018), "Hindi Language Stop Words List", Mendeley Data, V1, `doi: 10.17632/bsr3frvvjc.1 <https://data.mendeley.com/datasets/bsr3frvvjc/1>`_
+============ ===================================================================================================================================================================
