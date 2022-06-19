@@ -288,5 +288,6 @@ py_setup: ./$(virtualenv)
 		<( ./$(virtualenv)/bin/$(PYTHON) -c """$(requirements_py_code)""" )
 
 # Create a virtual environment.
+# Use the virtualenv package and fall back to the venv module.
 ./$(virtualenv):
-	/usr/bin/$(PYTHON) -m venv ./$(virtualenv)
+	virtualenv ./$(virtualenv) || /usr/bin/$(PYTHON) -m venv ./$(virtualenv)
